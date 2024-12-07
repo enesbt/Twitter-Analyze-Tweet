@@ -11,3 +11,4 @@
 3. Heatmap.html
 4. Sync Cloud
 5. Dataset
+6. Location NER
