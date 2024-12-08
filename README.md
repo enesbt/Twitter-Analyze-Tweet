@@ -1,6 +1,5 @@
 # TODO 
 1. get coordinates with google maps api (special address)
-2. get coordinates with Nominatim (city)
 3. optimize create labelling
 4. create classification model
 5. optimize web site
@@ -12,3 +11,4 @@
 4. Sync Cloud
 5. Dataset
 6. Location NER
+7. get coordinates with Nominatim (city)
