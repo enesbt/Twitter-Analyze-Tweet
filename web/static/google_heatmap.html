@@ -1,0 +1,61 @@
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Google Maps API Heatmap Example</title>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIIKk8ytSpl6fMho_we6GFNXBN0KZ9X6k&libraries=visualization&callback=initMap" async defer></script>
+        <style>
+          #map {
+            height: 100%;
+            width: 100%;
+          }
+          html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>Google Maps API ile Heatmap</h3>
+        <div id="map"></div>
+
+        <script>
+          var map;
+          var heatmap;
+
+          function initMap() {
+            var center = { lat: 38.9637, lng: 35.2433 };  // Türkiye'nin merkez koordinatları
+            map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 7,
+              center: center,
+              mapTypeId: 'roadmap'
+            });
+
+            // Heatmap verileri
+            var heatmapData = [
+              {location: new google.maps.LatLng(36.3451332, 36.0748022), weight: 64711},
+          {location: new google.maps.LatLng(37.7830345, 36.830655), weight: 41372},
+          {location: new google.maps.LatLng(37.78936, 38.3141101), weight: 35419},
+          {location: new google.maps.LatLng(38.3487153, 38.3190674), weight: 15843},
+          {location: new google.maps.LatLng(37.0628317, 37.3792617), weight: 14564},
+          {location: new google.maps.LatLng(36.9863599, 35.3252861), weight: 9617},
+          {location: new google.maps.LatLng(37.9162222, 40.2363542), weight: 8542},
+          {location: new google.maps.LatLng(37.2595198, 39.0408174), weight: 4508},
+          {location: new google.maps.LatLng(37.2517882, 36.2993502), weight: 4382},
+          {location: new google.maps.LatLng(38.5824771, 39.396179), weight: 1798},
+          {location: new google.maps.LatLng(36.7797231, 37.1416892), weight: 1092},
+
+            ];
+
+            heatmap = new google.maps.visualization.HeatmapLayer({
+              data: heatmapData,
+              map: map,
+              radius: 100,  
+              opacity: 0.6  // Opaklık
+            });
+          }
+        </script>
+      </body>
+    </html>
+    
