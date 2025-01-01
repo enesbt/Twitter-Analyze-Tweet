@@ -38,3 +38,4 @@
 9. optimized create labelling
 10. created classification model
 11. optimized web site
+12. optimized predict time
