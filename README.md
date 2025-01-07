@@ -10,8 +10,7 @@
 - Nominatim api
 - Google Maps api
 # Labelling
-- TfidfVectorizer
-- KMeans
+- Word Importance Scoring 
 # Classification
 - BERT
 # Web App
