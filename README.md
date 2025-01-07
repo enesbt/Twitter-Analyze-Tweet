@@ -12,6 +12,7 @@
 # Labelling
 - TfidfVectorizer
 - KMeans
+- Word Weighted
 # Classification
 - BERT
 # Web App
