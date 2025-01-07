@@ -25,17 +25,3 @@
 ![screencapture-127-0-0-1-5000-predict-2024-12-15-23_33_19](https://github.com/user-attachments/assets/83da52e3-8b65-4822-9bba-83b19940b78d)
 
 ![screencapture-127-0-0-1-5000-all-2024-12-15-23_34_02](https://github.com/user-attachments/assets/d2c0fdaa-aac7-4315-82b2-c37c81b52fd4)
-
-# Complated
-1. DataPreprocessing
-2. City Coordinates
-3. Heatmap.html
-4. Sync Cloud
-5. Dataset
-6. Location NER
-7. get coordinates with Nominatim (city)
-8. get coordinates with Google Api
-9. optimized create labelling
-10. created classification model
-11. optimized web site
-12. optimized predict time
